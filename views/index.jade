@@ -1,10 +1,34 @@
 html
   head
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(href="/css/bootstrap.min.css", rel="stylesheet")
     title!= title
+    script.
+     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+     ga('create', 'UA-64873304-1', 'auto');
+     ga('send', 'pageview');
   body
-    h3!= message
-    p if you'd like further info at this stage please contact info at datarefinery dot io
-  script.
-   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-   ga('create', 'UA-64873304-1', 'auto');
-   ga('send', 'pageview');
+   div(class="navbar-wrapper")
+    nav(class="navbar navbar-default navbar-static-top")
+     div(class="container")
+      div(class="navbar-header")
+       button(type="button", class="navbar-toggle collapsed", data-toggle="collapse", data-target="#navbar", aria-expanded="false", aria-controls="navbar")
+        span(class="glyphicon glyphicon-menu-hamburger")
+        p(style="margin: 0 0 0 0;") Menu
+      div(id="navbar", class="navbar-collapse collapse")
+       ul(class="nav navbar-nav")
+        li
+         a(href="/") Home
+        li
+         a(href="/blog/") Blog
+        li
+         a(href="/contact/") Contact
+   div(class="container")
+    block content
+     div(class="page")
+      h3!= message
+      p if you'd like further info at this stage please contact info at datarefinery dot io
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js")
+    script(src="/js/bootstrap.min.js")
+   
