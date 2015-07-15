@@ -1,5 +1,6 @@
 extends index
 block content
- h3!=  title
- - each msg in message
-   p!= md(msg)
+ div(class="page")
+  h3!=  title
+  - each msg in message
+    p!= md(msg)

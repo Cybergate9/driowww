@@ -3,20 +3,22 @@ var logger = require('morgan');
 var md = require('node-markdown').Markdown;
 var fs = require('fs');
 
-
 var app=express();
 
 //app.locals.pretty = true;
-
 app.set('view engine', 'jade');
 app.use(express.static(__dirname + '/files'));
-
 var accessLogStream = fs.createWriteStream(__dirname + '/access.log', {flags: 'a'})
 app.use(logger('combined', {stream: accessLogStream}));
 
-app.get(['/','/contact'], function(req, res){
-	res.render('index', { title: 'datarefinery.io', message: 'datarefinery.io coming soon!'});
+// top level handler for now
+app.get('/contact', function(req, res){
+	res.render('index', { title: 'Contact', message: 'Contact'});
 });
+app.get('/', function(req, res){
+	res.render('home', { title: 'datarefinery.io', message: 'Welcome'});
+});
+// blog directory handler
 app.get('/blog', function(req, res) {
 	    var files = fs.readdirSync('blog');
 			var mddata = [];
@@ -27,14 +29,13 @@ app.get('/blog', function(req, res) {
 		}
 		res.render('blog', {title: 'Welcome to the Bloggery', message: mddata, md: md});
 });
-// Handle 404
+// Handle 404's
 app.use(function(req, res) {
   res.status(400);
   res.render('404.jade', {
     title: '404: File Not Found'
   });
 });
-
 
 var server = app.listen(80, function(){
 	console.log("app listening on %s %s",server.address().address,server.address().port)
