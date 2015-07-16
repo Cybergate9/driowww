@@ -13,15 +13,15 @@ html
         span(class="glyphicon glyphicon-menu-hamburger")
         p(style="margin: 0 0 0 0;") Menu
       div(class="navbar-brand")
-       a(href="/" style="text-decoration: none;")
-        img(src="/images/33CCCCdroplet.png" width="20px")
-        span(style="color: #33CCCC;") &nbsp; dataRefinery.io &nbsp;
-      div(id="navbar", class="navbar-collapse collapse")
-       ul(class="nav navbar-nav" style="margin-top:5px;")
-        li
-         a(href="/blog/") Blog
-        li
-         a(href="/contact/") Contact
+        a(href="/" style="text-decoration: none;")
+         img(src="/images/dropletworld.png" width="25px")
+         span(style="color: #33CCCC; font-size: 20px;") &nbsp; dataRefinery.io &nbsp;
+       div(id="navbar", class="navbar-collapse collapse")
+        ul(class="nav navbar-nav")
+         li
+          a(href="/blog/") Blog
+         li
+          a(href="/contact/") Contact
    div(class="container")
     block content
      div(class="page")
@@ -33,3 +33,7 @@ html
      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
      ga('create', 'UA-64873304-1', 'auto');
      ga('send', 'pageview');
+    block footer
+     div(class="footer")
+      hr
+      p(class="text-right") &copy 2015 dataRefinery.io

@@ -22,7 +22,7 @@ app.get('/', function(req, res){
 app.get('/blog', function(req, res) {
 	    var files = fs.readdirSync('blog');
 			var mddata = [];
-			for(idx in files){
+			for(idx in files.reverse()){
 			if(files[idx][0] !== '.'){
       mddata.push(fs.readFileSync('blog/'+files[idx], {encoding: 'utf-8'}));
 		 }
