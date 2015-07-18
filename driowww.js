@@ -18,6 +18,12 @@ app.get('/contact', function(req, res){
 app.get('/', function(req, res){
 	res.render('home', { title: 'datarefinery.io', message: 'Welcome'});
 });
+// blog entry handler
+app.get(new RegExp('\/blog\/(.*)\/'), function(req, res) {
+			var mddata = [];
+      mddata.push(fs.readFileSync('blog/'+req.params[0]+'.md', {encoding: 'utf-8'}));
+		res.render('blog', {title: 'Welcome to the Bloggery', message: mddata, md: md});
+});
 // blog directory handler
 app.get('/blog', function(req, res) {
 	    var files = fs.readdirSync('blog');
