@@ -6,27 +6,37 @@ html
     title!= "dataRefinery.io: " + title
   body
    div(class="navbar-wrapper")
-    nav(class="navbar navbar-default navbar-static-top")
-     div(class="container")
+    div(class="navbar navbar-default navbar-static-top")
+     div(class="container-fluid")
       div(class="navbar-header")
        button(type="button", class="navbar-toggle collapsed", data-toggle="collapse", data-target="#navbar", aria-expanded="false", aria-controls="navbar")
-        span(class="glyphicon glyphicon-menu-hamburger")
-        p(style="margin: 0 0 0 0;") Menu
-      div(class="navbar-brand")
-        a(href="/" style="text-decoration: none;")
-         img(src="/images/droplet-drio.png" width="25px")
-         span(style="color: #33CCCC; font-size: 20px;") &nbsp; dataRefinery.io &nbsp;
-       div(id="navbar", class="navbar-collapse collapse")
-        ul(class="nav navbar-nav")
+        span(class="glyphicon glyphicon-menu-hamburger") <br/>Menu
+        //- span(class="sr-only") Toggle navigation
+        //- span(class="icon-bar")<br/>
+        //- span(class="icon-bar")<br/>
+        //- span(class="icon-bar")<br/> Menu
+      div(class="navbar-brand" style="margin-top:5px;")
+        a(href="/" style="text-decoration: none; ")
+         img(src="/images/droplet-drio.png" width="30px")
+         span(style="color: #33CCCC; font-size: 20px;") &nbsp; dataRefinery.io
+      div(id="navbar", class="navbar-collapse collapse")
+        ul(class="nav navbar-nav" style="margin-top: 10px;")
          li
           a(href="/blog/") Blog
          li
+          a(href="/services/") Services
+         li
           a(href="/contact/") Contact
+        ul(class="nav navbar-nav navbar-right")
+          li
+           a(href="https://twitter.com/datarefineryio")
+            img(src="/images/twitter.png" width="35px")
    div(class="container")
     block content
      div(class="page")
-      h3!= message
-      p You are welcome to contact us for further info via: info at datarefinery dot io
+      h3!= title
+      - each msg in message
+        p!= md(msg)
     script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js")
     script(src="/js/bootstrap.min.js")
     script.
@@ -36,4 +46,4 @@ html
     block footer
      div(class="footer")
       hr
-      p(class="text-right") &copy 2015 dataRefinery.io
+      p(class="text-right") &copy 2014-2015 dataRefinery.io

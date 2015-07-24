@@ -11,13 +11,22 @@ app.use(express.static(__dirname + '/files'));
 var accessLogStream = fs.createWriteStream(__dirname + '/access.log', {flags: 'a'})
 app.use(logger('combined', {stream: accessLogStream}));
 
-// top level handler for now
-app.get('/contact', function(req, res){
-	res.render('index', { title: 'Contact', message: 'Contact'});
-});
+// top level handlers for now
 app.get('/', function(req, res){
 	res.render('home', { title: 'datarefinery.io', message: 'Welcome'});
 });
+app.get('/contact', function(req, res){
+	var mddata = [];
+	mddata.push(fs.readFileSync('contact.md', {encoding: 'utf-8'}));
+	res.render('index', { title: 'Contact', message: mddata, md: md});
+});
+app.get('/services', function(req, res){
+	var mddata = [];
+	mddata.push(fs.readFileSync('services.md', {encoding: 'utf-8'}));
+	res.render('index', {title: 'Our Services', message: mddata, md: md});
+});
+
+
 // blog entry handler
 app.get(new RegExp('\/blog\/(.*)\/'), function(req, res) {
 			var mddata = [];
