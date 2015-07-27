@@ -4,6 +4,8 @@ Some call this 'big data', or 'data science', or 'ETL', or 'middleware' -  we ca
 
 In this, our initial phase of expansion, we're going to operate in 'internet only mode' - this keeps our overheads low and means we can pass this saving onto you.
 
+We have a special interest in solving [data problems](/blog/2015-07-23/) in [Museums](/museums/).
+
 We can help with:
 
 * Data Cleansing.

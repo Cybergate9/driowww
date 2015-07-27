@@ -20,6 +20,11 @@ app.get('/contact', function(req, res){
 	mddata.push(fs.readFileSync('contact.md', {encoding: 'utf-8'}));
 	res.render('index', { title: 'Contact', message: mddata, md: md});
 });
+app.get('/museums', function(req, res){
+	var mddata = [];
+	mddata.push(fs.readFileSync('museums.md', {encoding: 'utf-8'}));
+	res.render('index', { title: 'Museums', message: mddata, md: md});
+});
 app.get('/services', function(req, res){
 	var mddata = [];
 	mddata.push(fs.readFileSync('services.md', {encoding: 'utf-8'}));
