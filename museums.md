@@ -1,6 +1,6 @@
 We have well over a decades worth of experience in the UK museum's sector allowing us to bring particular vertical expertise to solving your problems in this area.
 
-Our particular interests in the cultural sector continue to relate to our core business:
+Our particular interests in the cultural sector relate to our core business:
 
 * Open Data. Having travelled the landscape from XML/XSLT, OAI-PMH, and Dublin Core to RESTful JSON based API's and CIDOC-CRM triplestores we can certainly help you in this area.
 

@@ -1,4 +1,4 @@
-We specialise in technologies related to data production, processing, integrations and use.
+We specialise in technologies related to data production, processing, integrations and using that data to build knowledge systems for analytics, online catalogues etc.
 
 Some call this 'big data', or 'data science', or 'ETL', or 'middleware' -  we call it 'getting your job done'.
 
