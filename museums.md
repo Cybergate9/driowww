@@ -8,6 +8,6 @@ Our particular interests in the cultural sector relate to our core business:
 
 * Services Integrations.  If you want good data services you are going to need good workflows with systems and tool integrations to make them work - our expertise in this area is based on building such things.
 
-* Online Public Catalogues. We have experience developing online collections catalogues using both vendor's systems or creating these web applications from scratch.
+* Online Public Catalogues. We have experience developing online catalogues using both vendor's systems or creating these web applications from scratch.
 
 Do [get in touch](/contact/) if you'd like further information.
