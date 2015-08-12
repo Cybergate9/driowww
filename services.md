@@ -1,4 +1,4 @@
-We specialise in technologies related to data production, processing, integrations and using that data to build knowledge systems for analytics, online catalogues etc.
+We specialise in technologies related to data production, processing and integrations and using that data to help you build knowledge systems with your data.
 
 Some call this 'big data', or 'data science', or 'ETL', or 'middleware' -  we call it 'getting your job done' :-)
 
@@ -17,8 +17,8 @@ We can help with:
 
 If you care about such details we have up to date skills including:
 
-* Language experience: C, Perl, PHP, Javascript
-* Used to working in environments such as: Windows, Linux, and OSX on single servers/machines, or VMWare installations, or on AWS
-* Used to working on web servers based on Apache, Varnish or Node.js on Windows or Linux using PHP, Drupal, Javascript in HTML5 and CSS3
-* Data store and indexer experience includes: MySQL, MSSQL, Elasticsearch, RethinkDB
-* Current vendor systems experience with Adlib (collections management) and Portfolio (digital asset management)
+* Language experience: formerly C and Perl, these days mostly PHP or Javascript
+* Used to working in environments such as: Windows, Linux, and OSX on single servers/machines, on VMware installations, or on Amazon EC2 (AWS)
+* Used to working on web servers based on Apache or Node.js on Windows/Linux/OSX
+* Data store and indexer experience includes: MySQL, some MSSQL, Elasticsearch, RethinkDB
+* Current vendor systems experience with Adlib (collections management) and Portfolio (digital asset management) with a raft of other server based systems experience in the past.
