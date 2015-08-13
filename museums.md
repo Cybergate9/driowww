@@ -10,4 +10,6 @@ Our particular interests in the cultural sector relate to our core business:
 
 * Online Resources. We have experience developing online resources using your data - using both vendor's systems or creating these web applications/systems from scratch.
 
+And in a general sense we can help with strategy, planning and project management to get you on your path to solving your data problems.
+
 Do [get in touch](/contact/) if you'd like further information.

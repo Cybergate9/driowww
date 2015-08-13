@@ -6,7 +6,9 @@ In this, our initial phase of expansion, where possible, we're going to operate 
 
 We have a special interest in solving [data problems](/blog/2015-07-23/) in the cultural sector and for [Museums](/museums/) in particular.
 
-We can help with:
+In a general sense we can help with strategy, planning and project management to get you on your path to solving your data problems.
+
+In specific sense we can with tasks like:
 
 * Data Cleansing.
 * Data Processing/Conversions.
