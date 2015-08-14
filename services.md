@@ -1,4 +1,4 @@
-We specialise in technologies related to data production, processing and integrations and using those systems to help you build knowledge based applications for the web.
+We specialise in technologies related to data production, processing and integrations and using those systems to help you build knowledge based applications for the web or mobile.
 
 Some call this 'big data', or 'data science', or 'middleware' -  we call it 'getting your job done' :-)
 
