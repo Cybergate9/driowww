@@ -1,14 +1,14 @@
-We specialise in technologies related to data production, processing and integrations and using those systems to help you build knowledge based applications for the web or mobile.
+We specialise in technologies related to data production, processing and integrations, and using those systems to help you build knowledge based applications for the web or mobile.
 
-Some call this 'big data', or 'data science', or 'middleware' -  we call it 'getting your job done' :-)
+Some call this 'big data', or 'ETL', or 'middleware' -  we call it 'getting your job done' :-)
 
 In this, our initial phase of expansion, where possible, we're going to operate in 'internet only mode' - this keeps our overheads low and means we can pass these savings on to you.
 
 We have a special interest in solving [data problems](/blog/2015-07-23/) in the cultural sector and for [Museums](/museums/) in particular.
 
-In a general sense we can help with strategy, planning and project management to get you on your path to solving your data problems.
+In a general sense we can help with strategy, planning and project management to get you moving along the path towards solving your data problems.
 
-In specific sense we can with tasks like:
+In specific sense we can help with technicals like:
 
 * Data Cleansing.
 * Data Processing/Conversions.
