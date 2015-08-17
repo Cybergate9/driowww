@@ -24,3 +24,5 @@ If you care about such details we have up to date skills including:
 * Used to working on web servers based on Apache or Node.js on Windows/Linux/OSX
 * Data store and indexer experience includes: MySQL, some MSSQL, Elasticsearch, RethinkDB
 * Current vendor systems experience with Adlib (collections management) and Portfolio (digital asset management) with a raft of other server based systems experience in the past.
+
+We know we don't know everything. Where we believe you need different/additional expertise we'll say so, and recommend partners we can team up with to help you to get your job done. 

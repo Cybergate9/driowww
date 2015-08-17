@@ -12,4 +12,6 @@ Our particular interests in the cultural sector relate to our core business:
 
 And in a general sense we can help with strategy, planning and project management to get you on your path to solving your data problems.
 
+We know we don't know everything. Where we believe you need different/additional expertise we'll say so, and recommend partners we can team up with to help you to get your job done. 
+
 Do [get in touch](/contact/) if you'd like further information.
