@@ -6,7 +6,7 @@ In this, our initial phase of expansion, where possible, we're going to operate 
 
 We have a special interest in solving [data problems](/blog/2015-07-23/) in the cultural sector and for [Museums](/museums/) in particular.
 
-In a general sense we can help with strategy, planning and project management to get you moving along the path towards solving your data problems.
+In a general sense we can help with strategy, planning, and project management to get you moving along the path towards solving your data problems.
 
 In specific sense we can help with technicals like:
 
@@ -17,12 +17,12 @@ In specific sense we can help with technicals like:
 * Web or Mobile applications built using your data.
 * Application, API and data hosting.
 
-If you care about such details we have up to date skills including:
+If you care about such things we have up to date skills including:
 
-* Language experience: formerly C and Perl, these days mostly PHP or Javascript
+* Language experience: formerly C and Perl, these days mostly PHP or Javascript (Node.js)
 * Used to working in environments such as: Windows, Linux, and OSX on single servers/machines, on VMware installations, or on Amazon EC2 (AWS)
 * Used to working on web servers based on Apache or Node.js on Windows/Linux/OSX
-* Data store and indexer experience includes: MySQL, some MSSQL, Elasticsearch, RethinkDB
+* Data store and indexer experience includes: SQL and NoSQL and in particular MySQL, some MSSQL and Postgres, Elasticsearch, RethinkDB, good exosure to mongodb and couchdb
 * Current vendor systems experience with Adlib (collections management) and Portfolio (digital asset management) with a raft of other server based systems experience in the past.
 
-We know we don't know everything. Where we believe you need different/additional expertise we'll say so, and recommend partners we can team up with to help you to get your job done. 
+We know we don't know everything. Where we believe you need different/additional expertise we'll say so, and recommend partners we can team up with to help you to get your job done.
