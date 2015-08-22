@@ -19,10 +19,10 @@ In specific sense we can help with technicals like:
 
 If you care about such things we have up to date skills including:
 
-* Language experience: formerly C and Perl, these days mostly PHP or Javascript (Node.js)
+* Language experience: formerly C and Perl, these days mostly PHP or Javascript (Node.js/IO.js)
 * Used to working in environments such as: Windows, Linux, and OSX on single servers/machines, on VMware installations, or on Amazon EC2 (AWS)
 * Used to working on web servers based on Apache or Node.js on Windows/Linux/OSX
-* Data store and indexer experience includes: SQL and NoSQL and in particular MySQL, some MSSQL and Postgres, Elasticsearch, RethinkDB, good exosure to mongodb and couchdb
+* Data store and indexer experience includes both SQL and NoSQL and in particular: MySQL, Elasticsearch, RethinkDB, good exposure to mongodb and couchdb, some MSSQL and Postgres...
 * Current vendor systems experience with Adlib (collections management) and Portfolio (digital asset management) with a raft of other server based systems experience in the past.
 
 We know we don't know everything. Where we believe you need different/additional expertise we'll say so, and recommend partners we can team up with to help you to get your job done.
