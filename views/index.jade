@@ -3,6 +3,8 @@ html
     meta(charset="utf-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     link(href="/css/bootstrap.min.css", rel="stylesheet")
+    link(href="/css/hack.min.css", rel="stylesheet")
+    link(href="/css/drio.css", rel="stylesheet")
     title!= "dataRefinery.Io: " + title
   body
    div(class="navbar-wrapper")
@@ -15,10 +17,10 @@ html
         //- span(class="icon-bar")<br/>
         //- span(class="icon-bar")<br/>
         //- span(class="icon-bar")<br/> Menu
-      div(class="navbar-brand" style="margin-top:5px;")
+      div(class="navbar-brand" style="margin-top:2px;")
         a(href="/" style="text-decoration: none; ")
-         img(src="/images/droplet-drio.png" width="35px")
-         span(style="color: #33CCCC; font-size: 20px; font-family:Helvetica, ;") &nbsp; dataRefinery.Io
+         img(src="/images/droplet-drio.png" width="45" style="padding-right: 7px;")
+         span(style="color: #33CCCC; font-size: 20px; font-weight:bold;") dataRefinery.Io
       div(id="navbar", class="navbar-collapse collapse")
         ul(class="nav navbar-nav" style="margin-top: 10px;")
          li

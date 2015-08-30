@@ -19,7 +19,7 @@ In specific sense we can help with technicals like:
 
 If you care about such things we have up to date skills including:
 
-* Language experience: formerly C and Perl, these days mostly PHP or Javascript (Node.js/io.js), with a smattering Go..
+* Language experience: formerly C and Perl, these days mostly PHP or Javascript (Node.js/io.js), with a smattering of Go..
 * Used to working in environments such as: Windows, Linux, and OSX on single servers/machines, or on VMware infrastructue, or on Amazon EC2 (AWS)
 * Used to working on web servers based on Apache or Node.js on Windows/Linux/OSX
 * Data store and indexer experience includes both SQL and NoSQL and in particular: MySQL, Elasticsearch, RethinkDB, good exposure to mongodb and couchdb, some MSSQL and Postgres, and a dabbling in triplestores (4Store)...
