@@ -1,0 +1,21 @@
+{
+  "name": "driowww.js",
+  "version": "1.0.0",
+  "description": "www.datarefinery.io website",
+  "main": "driowww.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "express",
+    "www"
+  ],
+  "author": "Shaun Osborne",
+  "license": "{\"License\" :\"MIT Licence\"}",
+  "dependencies": {
+    "express": "4.x.x",
+    "morgan": "1.6.x",
+    "node-markdown-alt":"0.2.x"
+  },
+  "engine": ">= 5.0.0"
+}
