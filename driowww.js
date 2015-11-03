@@ -1,6 +1,6 @@
 var express = require('express');
 var logger = require('morgan');
-var md = require('node-markdown-alt').Markdown;
+var md = require('node-markdown').Markdown;
 var fs = require('fs');
 
 var app=express();

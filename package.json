@@ -15,7 +15,7 @@
   "dependencies": {
     "express": "4.x.x",
     "morgan": "1.6.x",
-    "node-markdown-alt":"0.2.x"
+    "node-markdown":"0.1.x"
   },
   "engine": ">= 5.0.0"
 }
