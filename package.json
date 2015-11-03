@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "www.datarefinery.io website",
   "main": "driowww.js",
+  "repository" : {"type": "git", "url": "https://github.com/ITWrangler/driowww.git"},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,11 +12,12 @@
     "www"
   ],
   "author": "Shaun Osborne",
-  "license": "{\"License\" :\"MIT Licence\"}",
+  "license": "MIT",
   "dependencies": {
     "express": "4.x.x",
     "morgan": "1.6.x",
-    "node-markdown":"0.1.x"
+    "node-markdown":"0.1.x",
+    "jade": "1.11.x"
   },
   "engine": ">= 5.0.0"
 }
