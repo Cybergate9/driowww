@@ -33,7 +33,7 @@ app.get('/services', function(req, res){
 
 // blog single entry handler
 app.get(new RegExp('\/blog\/(.*)\/'), function(req, res) {
-	data = fs.readFileSync('blog/'+req.params[0]+'.md', 'utf-8')
+	data = fs.readFileSync('blog/'+req.params[0], 'utf-8')
 	md = mmarkdown(data);
 	res.render('blog', {Title: 'Welcome to the Bloggery', pageHtml: md.html});
 });
@@ -48,7 +48,7 @@ app.get('/blog', function(req, res) {
 			}
 		}
 		for(idx in md){
-			bloghtml = bloghtml+'<a href="'+idx+'/""><h3>'+md[idx].meta.Title+'</h3></a>';
+			bloghtml = bloghtml+'<a href="'+idx+'/"><h3>'+md[idx].meta.Title+'</h3></a>';
 			bloghtml = bloghtml+'<p><em>posted by '+md[idx].meta.Author+' on '+md[idx].meta.PostDate.toDateString()+'</em><p>';
 			bloghtml = bloghtml+md[idx].html;
 		}
