@@ -48,7 +48,7 @@ app.get('/blog', function(req, res) {
 			}
 		}
 		for(idx in md){
-			bloghtml = bloghtml+'<a href="'+idx+'""><h3>'+md[idx].meta.Title+'</h3></a>';
+			bloghtml = bloghtml+'<a href="'+idx+'.md""><h3>'+md[idx].meta.Title+'</h3></a>';
 			bloghtml = bloghtml+'<p><em>posted by '+md[idx].meta.Author+' on '+md[idx].meta.PostDate.toDateString()+'</em><p>';
 			bloghtml = bloghtml+md[idx].html;
 		}
