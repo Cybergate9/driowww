@@ -1,3 +1,10 @@
+---
+Title:  Our Services  
+Author: Shaun Osborne
+Date:   2015-11-07
+
+...
+
 We specialise in technologies related to data production, processing and integrations, and using those systems to help you build knowledge based applications for the web or mobile.
 
 Some call this 'big data', or 'ETL', or 'middleware' -  we call it 'getting your job done' :-)

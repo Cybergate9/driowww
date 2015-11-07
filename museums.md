@@ -1,3 +1,10 @@
+---
+Title:  Museums  
+Author: Shaun Osborne
+Date:   2015-11-07
+
+...
+
 We have over a decades experience in the UK museum's sector, allowing us to bring particular vertical expertise to solving your problems in this area.
 
 Our particular interests in the cultural sector relate to our core business:

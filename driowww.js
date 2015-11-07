@@ -1,6 +1,6 @@
 var express = require('express');
 var logger = require('morgan');
-var md = require('node-markdown').Markdown;
+var mmarkdown = require('meta-marked');
 var fs = require('fs');
 
 var app=express();
@@ -16,39 +16,43 @@ app.get('/', function(req, res){
 	res.render('home', { title: 'datarefinery.io', message: 'Welcome'});
 });
 app.get('/contact', function(req, res){
-	var mddata = [];
-	mddata.push(fs.readFileSync('contact.md', {encoding: 'utf-8'}));
-	res.render('index', { title: 'Contact', message: mddata, md: md});
+	data = fs.readFileSync('contact.md', 'utf-8')
+	md = mmarkdown(data);
+	res.render('index', {Title : md.meta.Title, pageHtml: md.html});
 });
 app.get('/museums', function(req, res){
-	var mddata = [];
-	mddata.push(fs.readFileSync('museums.md', {encoding: 'utf-8'}));
-	res.render('index', { title: 'Museums', message: mddata, md: md});
+	data = fs.readFileSync('museums.md', 'utf-8')
+	md = mmarkdown(data);
+	res.render('index', {Title : md.meta.Title, pageHtml: md.html});
 });
 app.get('/services', function(req, res){
-	var mddata = [];
-	mddata.push(fs.readFileSync('services.md', {encoding: 'utf-8'}));
-	res.render('index', {title: 'Our Services', message: mddata, md: md});
+	data = fs.readFileSync('services.md', 'utf-8')
+	md = mmarkdown(data);
+	res.render('index', {Title : md.meta.Title, pageHtml: md.html});
 });
 
-
-// blog entry handler
+// blog single entry handler
 app.get(new RegExp('\/blog\/(.*)\/'), function(req, res) {
-			var mddata = [];
-      mddata.push(fs.readFileSync('blog/'+req.params[0]+'.md', {encoding: 'utf-8'}));
-		res.render('blog', {title: 'Welcome to the Bloggery', message: mddata, md: md});
+	data = fs.readFileSync('blog/'+req.params[0]+'.md', 'utf-8')
+	md = mmarkdown(data);
+	res.render('blog', {Title: 'Welcome to the Bloggery', pageHtml: md.html});
 });
 // blog directory handler
 app.get('/blog', function(req, res) {
-	    var files = fs.readdirSync('blog');
-			var mddata = [];
-			for(idx in files.reverse()){
+    var files = fs.readdirSync('blog');
+		md=[]; bloghtml='';
+		for(idx in files.reverse()){
 			if(files[idx][0] !== '.'){
-      mddata.push(fs.readFileSync('blog/'+files[idx], {encoding: 'utf-8'}));
-		 }
+				data = fs.readFileSync('blog/'+files[idx], 'utf-8');
+				md.push(mmarkdown(data));
+			}
 		}
-		res.render('blog', {title: 'Welcome to the Bloggery', message: mddata, md: md});
+		for(idx in md){
+			bloghtml = bloghtml+md[idx].html;
+		}
+		res.render('blog', {Title: 'Welcome to the Bloggery', pageHtml: bloghtml});
 });
+
 // Handle 404's
 app.use(function(req, res) {
   res.status(400);
