@@ -44,10 +44,12 @@ app.get('/blog', function(req, res) {
 		for(idx in files.reverse()){
 			if(files[idx][0] !== '.'){
 				data = fs.readFileSync('blog/'+files[idx], 'utf-8');
-				md.push(mmarkdown(data));
+				md[files[idx]]=(mmarkdown(data));
 			}
 		}
 		for(idx in md){
+			bloghtml = bloghtml+'<a href="'+idx+'""><h3>'+md[idx].meta.Title+'</h3></a>';
+			bloghtml = bloghtml+'<p><em>posted by '+md[idx].meta.Author+' on '+md[idx].meta.PostDate.toDateString()+'</em><p>';
 			bloghtml = bloghtml+md[idx].html;
 		}
 		res.render('blog', {Title: 'Welcome to the Bloggery', pageHtml: bloghtml});
