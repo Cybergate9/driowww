@@ -30,7 +30,7 @@ html
    div(class="container")
     block content
      div(class="page")
-      h3!= Title
+      h3= Meta.Title
       p!= pageHtml
     script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js")
     script(src="/js/bootstrap.min.js")
@@ -41,7 +41,7 @@ html
     block footer
      div(class="footer")
       hr
-      p(class="text-right") &copy 2014-2015 dataRefinery.Io
+      p(class="text-right" ) &copy 2014-2015 dataRefinery.Io
         span &nbsp; / &nbsp;
         a(href="/contact/") Contact
         span &nbsp; / &nbsp;
