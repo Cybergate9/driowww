@@ -51,9 +51,10 @@ app.get('/blog', function(req, res) {
 			}
 		}
 		for(idx in md){
-			bloghtml = bloghtml+'<a href="'+idx.replace(".md","/")+'"><h3>'+md[idx].meta.Title+'</h3></a>';
+			bloghtml = bloghtml+'<hr/><a href="'+idx.replace(".md","/")+'"><h3>'+md[idx].meta.Title+'</h3></a>';
 			bloghtml = bloghtml+'<p><em>posted by '+md[idx].meta.Author+' on '+md[idx].meta.PostDate.toDateString()+'</em><p>';
-			bloghtml = bloghtml+md[idx].html;
+			bloghtml = bloghtml+md[idx].html.split(" ").slice(0,100).join(" ");
+			bloghtml = bloghtml+'<a href="'+idx.replace(".md","/")+'"><p><b>Read on...</b></p></a><br/>';
 		}
 		res.render('blog', {Title: 'Welcome to the Bloggery', pageHtml: bloghtml});
 });
