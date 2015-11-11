@@ -43,7 +43,7 @@ app.get(new RegExp('\/blog\/(.*)\/'), function(req, res) {
 // blog directory handler
 app.get('/blog', function(req, res) {
     var files = fs.readdirSync('blog');
-		md=[]; bloghtml='';
+		md=[]; bloghtml=''; abstractlength = 100;
 		for(idx in files.reverse()){
 			if(files[idx][0] !== '.'){
 				data = fs.readFileSync('blog/'+files[idx], 'utf-8');
@@ -51,9 +51,12 @@ app.get('/blog', function(req, res) {
 			}
 		}
 		for(idx in md){
+			if(md[idx].meta.AbstractWordCount !== undefined){  // if set in meta, per file, will control words diplayed in summary
+ 				abstractlength = md[idx].meta.AbstractWordCount;
+			}
 			bloghtml = bloghtml+'<hr/><a href="'+idx.replace(".md","/")+'"><h3>'+md[idx].meta.Title+'</h3></a>';
 			bloghtml = bloghtml+'<p><em>posted by '+md[idx].meta.Author+' on '+md[idx].meta.PostDate.toDateString()+'</em><p>';
-			bloghtml = bloghtml+md[idx].html.split(" ").slice(0,100).join(" ");
+			bloghtml = bloghtml+md[idx].html.split(" ").slice(0,abstractlength).join(" ");
 			bloghtml = bloghtml+'<a href="'+idx.replace(".md","/")+'"><p><b>Read on...</b></p></a><br/>';
 		}
 		res.render('blog', {Title: 'Welcome to the Bloggery', Meta: {PostDate: "2015-11-09"}, pageHtml: bloghtml});
