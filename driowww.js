@@ -43,7 +43,7 @@ app.get(new RegExp('\/blog\/(.*)\/'), function(req, res) {
 // blog directory handler
 app.get('/blog', function(req, res) {
     var files = fs.readdirSync('blog');
-		md=[]; bloghtml=''; abstractlength = 100;
+		md=[]; bloghtml=''; abstractlength = 200;
 		for(idx in files.reverse()){
 			if(files[idx][0] !== '.'){
 				data = fs.readFileSync('blog/'+files[idx], 'utf-8');

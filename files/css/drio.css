@@ -1,10 +1,15 @@
-/*!
-drio uses hack web font
-https://github.com/chrissimpkins/Hack#desktop-usage
-
-
-.navbar-wrapper {font-family:Hack;}
-.carousel-caption {font-family:Hack;}
-h1, h2, h3 {font-family:Hack;}
-.footer {font-family:Hack;}
-*/
+.img-right{
+  float: right;
+  padding: 5px;
+  margin: 10px;
+}
+.img-left{
+  float: left;
+  padding: 5px;
+  margin: 10px;
+}
+.img-caption{
+  margin: 2px 0 2px 0;
+  text-align: center;
+  font-style: italic;
+}
