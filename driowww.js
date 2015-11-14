@@ -20,6 +20,11 @@ app.get('/contact', function(req, res){
 	md = mmarkdown(data);
 	res.render('index', {Title : md.meta.Title, Meta: md.meta, pageHtml: md.html});
 });
+app.get('/credits', function(req, res){
+	data = fs.readFileSync('credits.md', 'utf-8')
+	md = mmarkdown(data);
+	res.render('index', {Title : md.meta.Title, Meta: md.meta, pageHtml: md.html});
+});
 app.get('/museums', function(req, res){
 	data = fs.readFileSync('museums.md', 'utf-8')
 	md = mmarkdown(data);
