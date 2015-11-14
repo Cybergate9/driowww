@@ -53,6 +53,9 @@ body {
 font-family: et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
 
 }
+.footer {
+  margin-top: 40px;
+}
 article { width: 90%;
        font-size: 15px;
        margin-left: auto;

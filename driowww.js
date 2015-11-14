@@ -55,14 +55,19 @@ app.get('/blog', function(req, res) {
 				md[files[idx]]=(mmarkdown(data));
 			}
 		}
+		x=0;
 		for(idx in md){
 			if(md[idx].meta.AbstractWordCount !== undefined){  // if set in meta, per file, will control words diplayed in summary
  				abstractlength = md[idx].meta.AbstractWordCount;
 			}
-			bloghtml = bloghtml+'<hr/><a href="'+idx.replace(".md","/")+'"><h3>'+md[idx].meta.Title+'</h3></a>';
+			if(x > 0){
+				bloghtml = bloghtml+'<p style="text-align: center"><img src="/images/divider.png"></p>';
+			}
+			bloghtml = bloghtml+'<a href="'+idx.replace(".md","/")+'"><h3>'+md[idx].meta.Title+'</h3></a>';
 			bloghtml = bloghtml+'<p><em>posted by '+md[idx].meta.Author+' on '+md[idx].meta.PostDate.toDateString()+'</em><p>';
 			bloghtml = bloghtml+md[idx].html.split(" ").slice(0,abstractlength).join(" ");
 			bloghtml = bloghtml+'<a href="'+idx.replace(".md","/")+'"><p><b>Read on...</b></p></a><br/>';
+			x++;
 		}
 		res.render('blog', {Title: 'Welcome to the Bloggery', Meta: {PostDate: "2015-11-09"}, pageHtml: bloghtml});
 });
