@@ -5,11 +5,9 @@ PostDate:   2015-11-09
 
 ...
 
-We specialise in technologies related to data production, processing and integrations, and using those systems to help you build knowledge based applications for the web or mobile.
+We are web technology specialists particularly in relation to data production, processing/integration, and using those systems to help you build knowledge based applications for the web or mobile.
 
-In this, our initial phase of expansion, where possible, we're going to operate in 'internet only mode' - this keeps our overheads low and means we can pass these savings on to you.
-
-In a general sense we can help with strategy, planning, and project management to get you moving along the path towards solving your data problems.
+In a general sense we can help with technical strategy, planning, and project management to get you moving along the path towards solving your data problems.
 
 In specific sense we can help with technicals like:
 
