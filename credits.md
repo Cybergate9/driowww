@@ -14,6 +14,6 @@ We'd like to thank:
 * the [Jade team](http://jade-lang.com/) for templating engine
 * Inspiration in the design, as well as css and fonts, come from [Bootstrap](http://getbootstrap.com/) and [Tufte CSS](https://edwardtufte.github.io/tufte-css/)
 
-All photographs used on this site are my own, and are usually already published in my [flickr account](https://www.flickr.com/photos/cybergate9/)
+All photographs used on this site are my own (usually published in my [flickr account](https://www.flickr.com/photos/cybergate9/)) unless stated otherwise.
 
 Do [get in touch](/contact/) if you'd like further information.
