@@ -13,7 +13,7 @@ app.use(logger('combined', {stream: accessLogStream}));
 
 // top level handlers for now
 app.get('/', function(req, res){
-	res.render('home', { title: 'datarefinery.io', Meta: {PostDate: "2015-11-09"}, message: 'Welcome'});
+	res.render('home', { Title: 'Welcome', Meta: {PostDate: "2015-11-09"}, message: 'Welcome'});
 });
 app.get('/contact', function(req, res){
 	data = fs.readFileSync('contact.md', 'utf-8')
@@ -61,7 +61,7 @@ app.get('/blog', function(req, res) {
  				abstractlength = md[idx].meta.AbstractWordCount;
 			}
 			if(x > 0){
-				bloghtml = bloghtml+'<p style="text-align: center"><img src="/images/divider.png"></p>';
+				bloghtml = bloghtml+'<p style="text-align: center"><img src="/images/divider.png"></p><br/>';
 			}
 			bloghtml = bloghtml+'<a href="'+idx.replace(".md","/")+'"><h3>'+md[idx].meta.Title+'</h3></a>';
 			bloghtml = bloghtml+'<p><em>posted by '+md[idx].meta.Author+' on '+md[idx].meta.PostDate.toDateString()+'</em><p>';
