@@ -5,7 +5,7 @@ PostDate:   2015-11-09
 
 ...
 
-We are web technology specialists particularly in relation to data production, processing/integration, and using those systems to help you build knowledge based applications for the web or mobile.
+We are web technology specialists particularly interested in data production, processing/integration, and using those systems to help you build knowledge based applications for the web or mobile.
 
 In a general sense we can help with technical strategy, planning, and project management to get you moving along the path towards solving your data problems.
 
@@ -26,6 +26,6 @@ If you care about such things we have up to date skills including:
 * Data store and indexer experience includes both SQL and NoSQL and in particular: MySQL, Elasticsearch, RethinkDB, good exposure to mongodb and couchdb, some MSSQL and Postgres, and a dabbling in triplestores (4Store)...
 * Current vendor systems experience with Adlib (collections management) and Extensis Portfolio (digital asset management) with a raft of other server based systems experience in the past.
 
-We have a special interest in solving [data problems](/blog/2015-07-23/) in the cultural sector and for [Museums](/museums/) in particular.
+We have had a special interest in solving [data problems](/blog/2015-07-23/) in the cultural sector and for [Museums](/museums/) in particular.
 
 We know we don't know everything. Where we believe you need different/additional expertise we'll say so, and recommend partners we can team up with to help you to get your job done.
