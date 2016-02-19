@@ -9,7 +9,7 @@ We are web technology specialists particularly interested in data production, pr
 
 In a general sense we can help with technical strategy, planning, and project management to get you moving along the path towards solving your data problems.
 
-In specific sense we can help with technicals like:
+In a specific sense, we can help with technicals like:
 
 * Data Cleansing.
 * Data Processing/Conversions.
