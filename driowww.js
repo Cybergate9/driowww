@@ -6,7 +6,7 @@ var fs = require('fs');
 var app=express();
 
 //app.locals.pretty = true;
-app.set('view engine', 'pug');
+app.set('view engine', 'jade');
 app.use(express.static(__dirname + '/files'));
 var accessLogStream = fs.createWriteStream(__dirname + '/access.log', {flags: 'a'})
 app.use(logger('combined', {stream: accessLogStream}));
