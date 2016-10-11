@@ -17,7 +17,7 @@
     "express": "4.x.x",
     "morgan": "1.6.x",
     "meta-marked":"0.3.x",
-    "jade": "1.11.x",
+    "pug": "2.0.0beta6",
     "bootstrap":"3.3.6"
   },
   "engine": ">= 5.0.0"
