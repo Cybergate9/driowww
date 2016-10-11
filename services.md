@@ -5,7 +5,7 @@ PostDate:   2015-11-09
 
 ...
 
-We are web technology specialists particularly interested in data production, processing/integration, and using those systems to help you build knowledge based applications for the web or mobile.
+We are full stack web technology specialists particularly interested in data production, processing/integration, and using those systems to help you build knowledge based applications for the web or mobile.
 
 In a general sense we can help with technical strategy, planning, and project management to get you moving along the path towards solving your data problems.
 
