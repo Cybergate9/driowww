@@ -18,7 +18,7 @@
     "morgan": "1.6.x",
     "meta-marked":"0.3.x",
     "jade": "1.11.0",
-    "bootstrap":"3.3.6"
+    "bootstrap":"3.4.1"
   },
   "engine": ">= 5.0.0"
 }
